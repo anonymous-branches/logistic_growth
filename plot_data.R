@@ -1,11 +1,14 @@
 #Script to plot the logistic growth data
 
-growth_data <- read.csv("???")
+#downloading the experimental data
+growth_data <- read.csv("experiment.csv")
 
+#installing packages 
 install.packages("ggplot2")
 library(ggplot2)
 
-ggplot(aes(t,N), data = ???) +
+#plotting population size against time 
+ggplot(aes(t,N), data = growth_data) +
   
   geom_point() +
   
@@ -15,7 +18,9 @@ ggplot(aes(t,N), data = ???) +
   
   theme_bw()
 
-ggplot(aes(t,???), data = growth_data) +
+#plotting log(population size) against time
+  #this is a semi-log plot 
+ggplot(aes(t, N), data = growth_data) +
   
   geom_point() +
   
