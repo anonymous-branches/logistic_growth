@@ -7,14 +7,15 @@ growth_data <- read.csv("experiment.csv")
 install.packages("ggplot2")
 library(ggplot2)
 
+#plotting the experimental data 
 #plotting population size against time 
 ggplot(aes(t,N), data = growth_data) +
   
   geom_point() +
   
-  xlab("t") +
+  xlab("Time (minutes)") +
   
-  ylab("y") +
+  ylab("N") +
   
   theme_bw()
 
@@ -24,8 +25,11 @@ ggplot(aes(t, N), data = growth_data) +
   
   geom_point() +
   
-  xlab("t") +
+  xlab("Time (minutes)") +
   
-  ylab("y") +
+  ylab("Log10(N)") +
   
-  scale_y_continuous(trans='log10')
+  scale_y_continuous(trans='log10') +
+  
+  theme_bw()
+

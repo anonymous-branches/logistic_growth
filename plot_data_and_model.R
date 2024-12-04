@@ -12,13 +12,16 @@ logistic_fun <- function(t) {
 }
 
 #approximating parameter values from two simplified linear equations (see fit_model_R)
+
+#using model 1 (exponential growth when K>> N0):
 N0 <- exp(6.8941709) #6.8941709 is the intercept of model 1, which is the initial population size
 #use exp() of it because 6.8941709 is given as ln(N0) and exp(ln(N0)) gives N0
   
 r <- 0.0100086 #gradient of model 1 (rate of change of population size)
-  
+
+#using model 2 (constant N=K):
 K <- 6.000e+10 #output of model 2 gives us the value of N=K as 6.000e+10
-  #here e isnot eulers number, it is representing 10
+  #here e is not eulers number, it is representing 10
 
 ggplot(aes(t,N), data = growth_data) +
   
