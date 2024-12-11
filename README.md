@@ -32,7 +32,8 @@ In `fit_linear_model.R` I subset the experimental data to only include instances
 #### Results
 Estimates:
 <i>N<sub>0</sub></i> = 987, <i>r</i> = 0.0100086, <i>K</i> = 6.0 x 10<sup>10</sup>
-These estimates were substituted into a model of logisitc growth to produce a plot of the model (red) against the experimental data (black points) used to generate the parameter estimates, allowing visual assessment of how well the model and parameter estimates use describe the population growth observed. It appears to be a good fit.
+
+In `plot_data_and_model.R` these estimates were substituted into a model of logisitc growth to produce a plot of the model (red) against the experimental data (black points) used to generate the parameter estimates, allowing visual assessment of how well the model and parameter estimates use describe the population growth observed. It appears to be a good fit.
 
 ![model_vs_raw_data](https://github.com/user-attachments/assets/a86f2909-b4dc-4b32-9b57-624ca154cda0)
 <figcaption><i>Figure 4. Plot of the raw data (black data points), population size (N) against time, compared to the values predicted by the model (red) </i></figcaption>
