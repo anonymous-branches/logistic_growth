@@ -50,3 +50,8 @@ The value predicted by exponential growth is much larger than the value predicte
 
 ## Question 3 
 <b>(20 points) Add an R script to your repository that makes a graph comparing the exponential and logistic growth curves (using the same parameter estimates you found). Upload this graph to your repo and include it in the README.md file so it can be viewed in the repo homepage.</b>
+
+The code for this question is provided as `question_3.R` in this repository. I used the logistic growth function from the original class work and the exponential function I created in question 2 to generate this plot. I plotted the raw data values to demonstrate which model was a better descriptor of the real population growth (the logistic model).
+
+![logistic_vs_exponential](https://github.com/user-attachments/assets/5a01f6e7-088f-4dad-9384-6773821118c8)
+<figcaption>Figure 5. Plot of the exponential model (blue) and the logistic model (magenta) of population growth. Raw data (black data points) from the simulated experiment plotted for comparison. </figcaption>
