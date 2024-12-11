@@ -6,7 +6,7 @@ R scripts for a reproducible analysis of logistic growth
 This analysis modelled population growth of a population of <i>Esherichia coli</i> in bacterial growth media, in a reproducible manner (i.e. clearly formatted code made available on GitHub). The aim was to be able to estimate the initial population size of the bacteria, the rate of growth, and the carrying capacity using the model built on simulated experimental data. 
 The data was obtained from Jose Gabriel Nino Barreat through OSF (https://osf.io/) and is saved in this repository as `experiment.csv`. 
 
-The population exhibited logistic growth. ![raw_experimental_plot](https://github.com/user-attachments/assets/8eec56b8-c6a0-490c-9d49-a1ba04b75fad "Plot of the raw data, population size (N) against time")
+The population exhibited logistic growth. <figure>![raw_experimental_plot](https://github.com/user-attachments/assets/8eec56b8-c6a0-490c-9d49-a1ba04b75fad)<figcaption><i>Plot of the raw data, population size (N) against time</i></figcaption></figure>
 
 
 ## Question 2 
