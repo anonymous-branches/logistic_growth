@@ -27,7 +27,8 @@ ggplot(aes(t,N), data = growth_data) +
   
   geom_function(fun=logistic_fun, colour="red") +
   
-  geom_point()
+  geom_point() +
+theme_minimal()
 #this is plotting the data against the model to check fit! 
   #it fits really well :)
 
@@ -35,7 +36,8 @@ ggplot(aes(t,N), data = growth_data) +
   
   geom_function(fun=logistic_fun, colour="red") +
   
-  geom_point() + scale_y_continuous(trans='log10')
+  geom_point() + scale_y_continuous(trans='log10') +
+theme_minimal()
   #this is the semi-log version of the plot - different way of viewing the relationship, model still fits well
 
 
