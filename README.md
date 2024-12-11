@@ -15,18 +15,28 @@ The first linear approximation represents the initial exponential stage of logis
 Therefore by identifying the time period where <i>K</i> >> <i>N<sub>0</sub></i>, i.e. <i>t</i> <1500, we can estimate <i>N<sub>0</sub></i> and <i>r</i>.
   
 ![case_1_semi_log](https://github.com/user-attachments/assets/0689a4db-b16a-4cd7-92cd-5d041389ba74)
-
+<figcaption><i>Figure 2. Plot of the raw data, population size (N) against time, with region where K >> N<sub>0</sub> highlighted in orange </i></figcaption>
+<br></br>
 In `fit_linear_model.R` I subset the experimental data to only include instances where t<1500, then fit a linear model between log N and t. This gave estimates for the values of <b><i>N<sub>0</sub></i> = 987</b> and <b><i>r</i> = 0.0100086</b>.
 
 The second approximation represents the stationary stage of logistic growth, where population size reaches carrying capacity (i.e. the system is at equilibrium). When <i>N<sub>0</sub></i> tends towards <i>K</i> and <i>t</i> tends towards infinity (i.e. is very large), <i>N<sub>t</sub></i> = <i>K</i>.
 Therefore by identifying the time period where <i>N<sub>t</sub></i> = <i>K</i>, i.e. <i>t</i> > 3000, we can estimate <i>K</i>.
 
 ![case_2_semi_log](https://github.com/user-attachments/assets/ad5c955b-ef55-4927-8fdb-f106bf0893cb)
-
+<figcaption><i>Figure 3. Plot of the raw data, population size (N) against time, with region where N<sub>t</sub> = K highlighted in purple </i></figcaption>
+<br></br>
 In `fit_linear_model.R` I subset the experimental data to only include instances where t>3000, then fit a linear model with the model formula N ~ 1, which predicts the mean of N (i.e. setting Y = intercept, no x value specified). This gave an estimate for the value of <b><i>K</i> = 6.0 x 10<sup>10</sup></b>.
-#### Estimates 
+#### Results
+Estimates:
 <i>N<sub>0</sub></i> = 987, <i>r</i> = 0.0100086, <i>K</i> = 6.0 x 10<sup>10</sup>
+These estimates were substituted into a model of logisitc growth to produce a plot of the model (red) against the experimental data (black points) used to generate the parameter estimates, allowing visual assessment of how well the model and parameter estimates use describe the population growth observed. It appears to be a good fit.
+
+![model_vs_raw_data](https://github.com/user-attachments/assets/a86f2909-b4dc-4b32-9b57-624ca154cda0)
+<figcaption><i>Figure 4. Plot of the raw data (black data points), population size (N) against time, compared to the values predicted by the model (red) </i></figcaption>
+<br></br>
+
 ## Question 2 
-(10 points) Use your estimates of  <i>N<sub>0</sub> </i>and <i>r</i> to calculate the population size at <i>t</i> = 4980 min, assuming that the population grows exponentially. How does it compare to the population size predicted under logistic growth?
+<b>(10 points) Use your estimates of  <i>N<sub>0</sub> </i>and <i>r</i> to calculate the population size at <i>t</i> = 4980 min, assuming that the population grows exponentially. How does it compare to the population size predicted under logistic growth?</b>
+
 ## Question 3 
 (20 points) Add an R script to your repository that makes a graph comparing the exponential and logistic growth curves (using the same parameter estimates you found). Upload this graph to your repo and include it in the README.md file so it can be viewed in the repo homepage.
