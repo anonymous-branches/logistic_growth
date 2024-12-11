@@ -1,6 +1,7 @@
 #Script to plot data and model
 
 growth_data <- read.csv("experiment.csv")
+library(ggplot2)
 
 #defining a function to plot the model
 logistic_fun <- function(t) {
