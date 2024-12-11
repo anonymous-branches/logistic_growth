@@ -43,6 +43,12 @@ data_subset1 <- growth_data %>% filter(t<1500) %>% mutate(N_log = log(N))
 
 model1 <- lm(N_log ~ t, data_subset1)
 summary(model1)
+#6.8941709 is the intercept of model 1, which is the initial population size
+#so N0 = exp(6.8941709) = 987 (3sf)
+  #use exp() because 6.8941709 is given as ln(N0) and exp(ln(N0)) gives N0
+
+#r = 0.0100086 
+#gradient of model 1 (rate of change of population size)
 
 #Case 2. N(t) = K ####
 #from the plot of the raw data, can see n(t)= k at t>3000
@@ -86,3 +92,5 @@ model2 <- lm(N ~ 1, data_subset2)
   #N= 6.000e+10 = k
 
 summary(model2)
+#K <- 6.000e+10 
+#output of model 2 gives us the value of N=K as 6.0 × 10^10 i.e. 60,000,000,000
