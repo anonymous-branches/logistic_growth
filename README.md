@@ -49,4 +49,4 @@ I used the logistic growth function from `plot_data_and_model.R` to estimate pop
 The value predicted by exponential growth is much larger than the value predicted by logistic growth, which is what I would expect since logistic growth plateaus, whilst exponential growth does not. 
 
 ## Question 3 
-(20 points) Add an R script to your repository that makes a graph comparing the exponential and logistic growth curves (using the same parameter estimates you found). Upload this graph to your repo and include it in the README.md file so it can be viewed in the repo homepage.
+<b>(20 points) Add an R script to your repository that makes a graph comparing the exponential and logistic growth curves (using the same parameter estimates you found). Upload this graph to your repo and include it in the README.md file so it can be viewed in the repo homepage.</b>
