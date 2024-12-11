@@ -7,7 +7,9 @@ This analysis modelled population growth of a population of <i>Esherichia coli</
 The data was obtained from Jose Gabriel Nino Barreat through OSF (https://osf.io/) and is saved in this repository as `experiment.csv`. 
 
 The population exhibited logistic growth.
-<figure>![raw_experimental_plot](https://github.com/user-attachments/assets/8eec56b8-c6a0-490c-9d49-a1ba04b75fad)<figcaption><i>Figure 1. Plot of the raw data, population size (N) against time</i></figcaption></figure>
+![raw_experimental_plot](https://github.com/user-attachments/assets/8eec56b8-c6a0-490c-9d49-a1ba04b75fad)
+  <figcaption><i>Figure 1. Plot of the raw data, population size (N) against time</i></figcaption>
+
 
 
 ## Question 2 
