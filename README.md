@@ -54,5 +54,7 @@ The value predicted by exponential growth is much larger than the value predicte
 
 The code for this question is provided as `question_3.R` in this repository. I used the logistic growth function from the original class work and the exponential function I created in question 2 to generate this plot. I plotted the raw data values to demonstrate which model was a better descriptor of the real population growth (the logistic model).
 
+I truncated the y-axis to only show values within the range predicted by the logistic model, because the exponential model predicted such large population sizes that if both models were plotted for the full time range (t=5000), the pattern of logistic growth was no longer visible as it occurs over a comparatively small range of population size values.
+
 ![logistic_vs_exponential](https://github.com/user-attachments/assets/5a01f6e7-088f-4dad-9384-6773821118c8)
 <figcaption><i>Figure 5. Plot of the exponential model (blue) and the logistic model (magenta) of population growth. Raw data (black data points) from the simulated experiment plotted for comparison.</i></figcaption>
