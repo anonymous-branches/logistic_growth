@@ -15,7 +15,7 @@ The first linear approximation represents the initial exponential stage of logis
 Therefore by identifying the time period where <i>K</i> >> <i>N<sub>0</sub></i>, i.e. <i>t</i> <1500, we can estimate <i>N<sub>0</sub></i> and <i>r</i>.
   
 ![case_1_semi_log](https://github.com/user-attachments/assets/0689a4db-b16a-4cd7-92cd-5d041389ba74)
-<figcaption><i>Figure 2. Plot of the raw data, population size (N) against time, with region where K >> N<sub>0</sub> highlighted in orange </i></figcaption>
+<figcaption><i>Figure 2. Plot of the raw data, log(population size (N)) against time, with region where K >> N<sub>0</sub> highlighted in orange </i></figcaption>
 <br></br>
 
 In `fit_linear_model.R` I subset the experimental data to only include instances where t<1500, then fit a linear model between log N and t. This gave estimates for the values of <b><i>N<sub>0</sub></i> = 987</b> and <b><i>r</i> = 0.0100086</b>.
@@ -24,7 +24,7 @@ The second approximation represents the stationary stage of logistic growth, whe
 Therefore by identifying the time period where <i>N<sub>t</sub></i> = <i>K</i>, i.e. <i>t</i> > 3000, we can estimate <i>K</i>.
 
 ![case_2_semi_log](https://github.com/user-attachments/assets/ad5c955b-ef55-4927-8fdb-f106bf0893cb)
-<figcaption><i>Figure 3. Plot of the raw data, population size (N) against time, with region where N<sub>t</sub> = K highlighted in purple </i></figcaption>
+<figcaption><i>Figure 3. Plot of the raw data, log (population size (N)) against time, with region where N<sub>t</sub> = K highlighted in purple </i></figcaption>
 <br></br>
 
 In `fit_linear_model.R` I subset the experimental data to only include instances where t>3000, then fit a linear model with the model formula N ~ 1, which predicts the mean of N (i.e. setting Y = intercept, no x value specified). This gave an estimate for the value of <b><i>K</i> = 6.0 x 10<sup>10</sup></b>.
