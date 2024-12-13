@@ -44,6 +44,7 @@ In `plot_data_and_model.R` these estimates were substituted into a model of logi
 
 The code for this question is provided as `question_2.R` in this repository. I created a function (`exp_fun()`) to calculate <i>N<sub>t</sub></i> in terms of <i>t</i>, for specified <i>N<sub>0</sub> </i>and <i>r</i> values. The function was based on the equation for exponential growth (<i>N<sub>t</sub> = N<sub>0</sub>e<sup>rt</sup></i>). 
 This predicted than when <i>N<sub>0</sub></i> = 987, <i>r</i> = 0.0100086, and <i>t</i> = 4980, population size would be  4.37 x 10<sup>24</sup>. 
+
 I used the logistic growth function from `plot_data_and_model.R` to estimate population size under logistic growth, 6 x 10<sup>10</sup>. This aligns with what I would expect - as t = 4980 > 3000, so at this time point <i>N=K</i> and as mentioned in question one, my estimate for K was 6.0 x 10<sup>10</sup>.
 
 The value predicted by exponential growth is much larger than the value predicted by logistic growth, which is what I would expect since logistic growth plateaus, whilst exponential growth does not. 
